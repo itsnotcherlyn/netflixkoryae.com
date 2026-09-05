@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday - Netflix Edition</title>
+    <title>ดูหนังเถื่อนคลิกที่นี่</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Icons -->
@@ -141,28 +141,25 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto px-4">
                 
-                <!-- [จุดใส่รูปที่ 1] Profile 1: wish -->
+                <!-- Profile 1: wish -->
                 <div onclick="openScreen('wish')" class="group flex flex-col items-center cursor-pointer">
                     <div class="w-28 h-28 md:w-36 md:h-36 rounded overflow-hidden border-2 border-transparent group-hover:border-white transition duration-200 shadow-xl bg-gray-800">
-                        <!-- ใส่ชื่อไฟล์รูปของคุณตรง src="..." เช่น wish.png หรือใช้รูปที่อัปโหลดไว้ -->
                         <img src="wish.jpg.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                     <span class="mt-3 text-gray-400 group-hover:text-white text-base md:text-lg font-medium">wish</span>
                 </div>
 
-                <!-- [จุดใส่รูปที่ 2] Profile 2: cake -->
+                <!-- Profile 2: cake -->
                 <div onclick="openScreen('cake')" class="group flex flex-col items-center cursor-pointer">
                     <div class="w-28 h-28 md:w-36 md:h-36 rounded overflow-hidden border-2 border-transparent group-hover:border-white transition duration-200 shadow-xl bg-gray-800">
-                        <!-- ใส่ชื่อไฟล์รูปของคุณตรง src="..." เช่น cake.png หรือใช้รูปที่อัปโหลดไว้ -->
                         <img src="cake.jpg.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                     <span class="mt-3 text-gray-400 group-hover:text-white text-base md:text-lg font-medium">cake</span>
                 </div>
 
-                <!-- [จุดใส่รูปที่ 3] Profile 3: secret -->
+                <!-- Profile 3: secret -->
                 <div onclick="openScreen('secret')" class="group flex flex-col items-center cursor-pointer">
                     <div class="w-28 h-28 md:w-36 md:h-36 rounded overflow-hidden border-2 border-transparent group-hover:border-white transition duration-200 shadow-xl bg-gray-800">
-                        <!-- ใส่ชื่อไฟล์รูปของคุณตรง src="..." เช่น secret.png หรือใช้รูปที่อัปโหลดไว้ -->
                         <img src="secret.jpg.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                     <span class="mt-3 text-gray-400 group-hover:text-white text-base md:text-lg font-medium">secret</span>
@@ -222,7 +219,6 @@
                 <div id="memeModal" class="hidden absolute inset-0 bg-black/90 flex flex-col items-center justify-center p-4 rounded-lg z-10">
                     <h3 class="text-yellow-400 font-bold text-xl mb-2">อด55665665585565</h3>
                     
-                    <!-- [จุดใส่รูปที่ 4] รูปมีมแมวยิ้มกวนๆ -->
                     <div class="w-64 h-64 bg-gray-800 rounded-lg overflow-hidden mb-4 border-4 border-white flex items-center justify-center shadow-2xl">
                         <img id="catMemeImage" src="memecat.jpg.jpg" alt="" class="w-full h-full object-cover">
                     </div>
@@ -276,23 +272,21 @@
                     <h1 class="text-6xl md:text-8xl font-black text-yellow-400 tracking-wider animate-bounce">
                         กูเอง
                     </h1>
-                    <!-- [จุดใส่รูปที่ 5] รูปมีมหลังคำว่า "กูเอง" -->
                     <div class="w-56 h-56 md:w-64 md:h-64 bg-stone-900 rounded-lg overflow-hidden border-4 border-yellow-400 shadow-2xl flex items-center justify-center">
                         <img id="gooEngMemeImage" src="meme.jpg.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                 </div>
 
-                <!-- Step 5: Jokingly (York-Len - No Emoji) -->
+                <!-- Step 5: Jokingly -->
                 <div id="secretStep5" class="hidden">
                     <h1 class="text-5xl md:text-7xl font-bold text-pink-400 tracking-wide animate-pulse">
                         หยอกเล่น
                     </h1>
                 </div>
 
-                <!-- Step 6: Cute Vector Birthday Cake with Interactive Flame -->
+                <!-- Step 6: Cake & Candle -->
                 <div id="secretStep6" class="hidden flex flex-col items-center space-y-4">
                     <div id="cuteCakeContainer" class="relative my-2 w-64 h-64 md:w-72 md:h-72 drop-shadow-2xl flex items-center justify-center">
-                        <!-- Vector SVG Cake Illustration -->
                         <svg viewBox="0 0 240 260" class="w-full h-full">
                             <defs>
                                 <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
@@ -313,59 +307,42 @@
                                 </linearGradient>
                             </defs>
 
-                            <!-- Glow Aura Behind Flame -->
                             <circle id="flameGlowCircle" cx="120" cy="45" r="45" fill="url(#flameGlow)"/>
-
-                            <!-- Cake Plate -->
                             <ellipse cx="120" cy="225" rx="100" ry="20" fill="url(#cakePlateGrad)" stroke="#94a3b8" stroke-width="3"/>
                             <ellipse cx="120" cy="220" rx="88" ry="15" fill="#ffffff"/>
 
-                            <!-- Bottom Cake Layer -->
                             <rect x="40" y="150" width="160" height="60" rx="12" fill="url(#layerBottom)"/>
                             <ellipse cx="120" cy="150" rx="80" ry="15" fill="#f472b6"/>
-                            <!-- Cream Drips Bottom Layer -->
                             <path d="M 40 150 Q 50 175 60 150 Q 75 180 90 150 Q 105 170 120 150 Q 135 180 150 150 Q 165 170 180 150 Q 190 175 200 150 L 200 145 L 40 145 Z" fill="#ffffff"/>
 
-                            <!-- Top Cake Layer -->
                             <rect x="60" y="100" width="120" height="50" rx="10" fill="url(#layerTop)"/>
                             <ellipse cx="120" cy="100" rx="60" ry="12" fill="#fbcfe8"/>
-                            <!-- Cream Drips Top Layer -->
                             <path d="M 60 100 Q 72 120 84 100 Q 98 125 112 100 Q 128 120 144 100 Q 160 125 180 100 L 180 95 L 60 95 Z" fill="#ffffff"/>
 
-                            <!-- Decorative Strawberries 🍓 -->
-                            <!-- Strawberry 1 -->
                             <path d="M 75 92 C 70 82 85 80 85 92 C 85 100 75 102 75 92 Z" fill="#ef4444"/>
                             <circle cx="78" cy="88" r="1" fill="#fef08a"/>
                             <path d="M 77 82 Q 80 78 83 82" stroke="#22c55e" stroke-width="2" fill="none"/>
-                            <!-- Strawberry 2 (Center) -->
+
                             <path d="M 120 90 C 113 78 132 76 128 90 C 126 100 116 101 120 90 Z" fill="#ef4444"/>
                             <circle cx="122" cy="87" r="1" fill="#fef08a"/>
                             <path d="M 120 80 Q 123 75 127 80" stroke="#22c55e" stroke-width="2.5" fill="none"/>
-                            <!-- Strawberry 3 -->
+
                             <path d="M 160 92 C 155 82 170 80 170 92 C 170 100 160 102 160 92 Z" fill="#ef4444"/>
                             <circle cx="163" cy="88" r="1" fill="#fef08a"/>
                             <path d="M 162 82 Q 165 78 168 82" stroke="#22c55e" stroke-width="2" fill="none"/>
 
-                            <!-- Gold Badge Label "HBD 18th" -->
                             <rect x="80" y="165" width="80" height="24" rx="12" fill="#f59e0b" stroke="#fef08a" stroke-width="2"/>
                             <text x="120" y="181" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">HBD 18th</text>
 
-                            <!-- Candle Body -->
                             <rect x="114" y="48" width="12" height="48" rx="4" fill="#60a5fa"/>
-                            <!-- Candle Stripes -->
                             <path d="M 114 58 L 126 54 M 114 70 L 126 66 M 114 82 L 126 78" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
-                            <!-- Wick -->
                             <line x1="120" y1="48" x2="120" y2="40" stroke="#334155" stroke-width="2.5"/>
 
-                            <!-- Animated Candle Flame (Group) -->
                             <g id="svgCandleFlame" class="flame-svg">
-                                <!-- Outer Flame -->
                                 <path d="M 120 15 Q 132 30 120 42 Q 108 30 120 15 Z" fill="#f97316"/>
-                                <!-- Inner Flame -->
                                 <path d="M 120 22 Q 127 32 120 40 Q 113 32 120 22 Z" fill="#fef08a"/>
                             </g>
 
-                            <!-- Smoke Effect (Initially Hidden) -->
                             <g id="svgSmoke" class="hidden">
                                 <circle class="smoke-particle" cx="120" cy="35" r="6" fill="#cbd5e1"/>
                                 <circle class="smoke-particle" cx="116" cy="25" r="9" fill="#94a3b8" style="animation-delay: 0.2s;"/>
@@ -411,3 +388,117 @@
         const VALID_PASS = "070908";
 
         function handleLogin(event) {
+            if (event) event.preventDefault();
+            
+            const email = document.getElementById('emailInput').value.trim();
+            const password = document.getElementById('passwordInput').value.trim();
+            const errorDiv = document.getElementById('loginError');
+
+            if (email === VALID_EMAIL && password === VALID_PASS) {
+                errorDiv.classList.add('hidden');
+                document.getElementById('loginPage').classList.add('hidden');
+                document.getElementById('profilePage').classList.remove('hidden');
+                document.getElementById('userInfo').classList.remove('hidden');
+            } else {
+                errorDiv.classList.remove('hidden');
+            }
+        }
+
+        function logout() {
+            document.getElementById('userInfo').classList.add('hidden');
+            document.getElementById('profilePage').classList.add('hidden');
+            document.getElementById('wishScreen').classList.add('hidden');
+            document.getElementById('cakeScreen').classList.add('hidden');
+            document.getElementById('secretScreen').classList.add('hidden');
+            document.getElementById('loginPage').classList.remove('hidden');
+        }
+
+        function goToProfiles() {
+            document.getElementById('wishScreen').classList.add('hidden');
+            document.getElementById('cakeScreen').classList.add('hidden');
+            document.getElementById('secretScreen').classList.add('hidden');
+            document.getElementById('profilePage').classList.remove('hidden');
+        }
+
+        function openScreen(type) {
+            document.getElementById('profilePage').classList.add('hidden');
+            if (type === 'wish') {
+                document.getElementById('wishScreen').classList.remove('hidden');
+            } else if (type === 'cake') {
+                document.getElementById('cakeScreen').classList.remove('hidden');
+            } else if (type === 'secret') {
+                document.getElementById('secretScreen').classList.remove('hidden');
+                resetTheater();
+            }
+        }
+
+        // --- THEATER & CANDLE LOGIC ---
+        function resetTheater() {
+            document.getElementById('secretStep1').classList.remove('hidden');
+            document.getElementById('secretStep2').classList.add('hidden');
+            document.getElementById('secretStep3').classList.add('hidden');
+            document.getElementById('secretStep4').classList.add('hidden');
+            document.getElementById('secretStep5').classList.add('hidden');
+            document.getElementById('secretStep6').classList.add('hidden');
+            document.getElementById('secretStep7').classList.add('hidden');
+            document.getElementById('secretStep8').classList.add('hidden');
+            document.getElementById('theaterBox').style.background = '';
+        }
+
+        function triggerLightsOff() {
+            document.getElementById('secretStep1').classList.add('hidden');
+            document.getElementById('theaterBox').style.background = '#000000';
+            document.getElementById('secretStep2').classList.remove('hidden');
+        }
+
+        function triggerPrettyQuestion() {
+            document.getElementById('secretStep2').classList.add('hidden');
+            document.getElementById('secretStep3').classList.remove('hidden');
+        }
+
+        function triggerFinalAnswer() {
+            document.getElementById('secretStep3').classList.add('hidden');
+            document.getElementById('secretStep4').classList.remove('hidden');
+            
+            setTimeout(() => {
+                document.getElementById('secretStep4').classList.add('hidden');
+                document.getElementById('secretStep5').classList.remove('hidden');
+                
+                setTimeout(() => {
+                    document.getElementById('secretStep5').classList.add('hidden');
+                    document.getElementById('secretStep6').classList.remove('hidden');
+                }, 2000);
+            }, 2500);
+        }
+
+        function blowCandle() {
+            document.getElementById('svgCandleFlame').classList.add('hidden');
+            document.getElementById('flameGlowCircle').classList.add('hidden');
+            document.getElementById('svgSmoke').classList.remove('hidden');
+            document.getElementById('blowBtn').classList.add('hidden');
+
+            setTimeout(() => {
+                document.getElementById('secretStep6').classList.add('hidden');
+                document.getElementById('secretStep7').classList.remove('hidden');
+                document.getElementById('secretStep8').classList.remove('hidden');
+            }, 2000);
+        }
+
+        // --- MINI GAME LOGIC ---
+        let score = 0;
+        let gameInterval;
+        function startGame() {
+            document.getElementById('cakeNote').classList.add('hidden');
+            document.getElementById('gameContainer').classList.remove('hidden');
+            score = 0;
+            document.getElementById('scoreText').innerText = score;
+            document.getElementById('memeModal').classList.add('hidden');
+        }
+
+        function restartGame() {
+            document.getElementById('memeModal').classList.add('hidden');
+            startGame();
+        }
+    </script>
+</body>
+</html>
